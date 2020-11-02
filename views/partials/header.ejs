@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        <%= title %>
+        <%= doston %> 
+    
+    </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+        <li class="nav-item active">
+            
+        </li>
+            <% if(admin){ %>
+                <li class="nav-item">
+                    <a class=" btn btn-success mr-2" href="/profile">My Profile</a>
+                    <a href="#" class="btn btn-success">Car List</a>
+                </li>
+            <% } %> 
+        
+        </ul>
+
+        <% if(admin){ %>
+            <a href="create" class="btn btn-primary mr-2">Create New</i></a>
+            <a href='/log-out'  class="btn btn-danger">Log Out</a>
+
+        <% } else{ %>
+            <a href='/sign-up'  class="btn btn-primary mr-2">Sign Up</a>
+            <a href='/sign-in'  class="btn btn-success mr-2">Sign In</a>
+
+        <% } %>   
+        
+        
+    </div>
+    </nav>

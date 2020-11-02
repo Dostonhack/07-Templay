@@ -1,0 +1,36 @@
+[
+    { 
+        "id":1,
+        "email":"a",
+        "password":1,
+        "name":"Doston",
+        "famliy":"Eliboyev"
+        
+    },
+
+    {   
+        "id": 1,
+        "email":"s",
+        "password":1,
+        "name": "Leanne Graham",
+        "username": "Bret",
+        "number":933041519
+        
+    },
+    {   
+        "id": 2,
+        "email":"d",
+        "password":12,
+        "name": "Leanne Graham",
+        "username": "Bret",
+        "number":933041519
+    },
+    {   
+        "id": 3,
+        "email":"c",
+        "password":1,
+        "name": "Leanne Graham",
+        "username": "Bret",
+        "number":933041519
+    }
+]
